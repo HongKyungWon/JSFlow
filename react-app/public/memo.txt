@@ -123,6 +123,25 @@ Component Event 만들기!!(Event의 생산자 되기)
 - read-only(수정 불가)     - changes can be asynchoronous
 - can not be modifiied    - can be modifiied using this.setState
 
+2. props(사용자)    ->   state(구현자 )   ->   DOM
+                         Component
 
-베이스 캠프 
+3. Component 특징
+    - 하위 Component 를 조작하기 위해 props를 활용한다.
+    - 상위 Component 는 Event를 통해 조작 가능
+      -> props는 Read-Only이기에 불가능!!
+      + Redux로 상.하위 Component를 자유자재로 컨트롤 가능
+  
+---------------------------------------------------------
 
+
+shouldComponentUpdate() - Component의 재렌더링을 제어할 수 있다.
+설정할 수 있다.
+ -> 불필요한 성능 저하를 피할 수 있음.
+
+- 렌더링(새로운 속성이나 상태가 전달된다) 직전에 실행되는 함수로
+ React가 다시 렌더링 되지 않도록 설정
+
+ ==========================================================
+ 
+ 
